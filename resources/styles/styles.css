@@ -1,0 +1,39 @@
+#menu-box{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    transition-duration:0.4s;
+    height: 50px;background: none;
+}
+.menu{
+    width: 1005px;
+    margin:auto;
+    height: 50px;
+    background:none;
+}
+.menu-item h2 a{
+    padding-top:6px;
+    color:#C6CDD4;
+    transition-duration: 0.4s;
+    padding-left:10px;
+    float:left;
+}
+.menu-item a{
+    padding:13px 15px;
+    color:#C6CDD4;
+    float:right;
+    transition-duration: 0.4s;
+}
+.menu-item a:hover{
+    color:white;
+    font-size:20px;
+}
+.menu-item h2 a:hover{
+    color:white;
+    font-size:27px;
+}
+#item-box{
+    height: 1150px;
+    background:white;
+    overflow: hidden;
+}
