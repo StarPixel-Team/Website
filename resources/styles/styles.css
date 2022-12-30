@@ -1,39 +1,97 @@
-#menu-box{
+a {
+    text-decoration: none;
+    color: blue;
+}
+.menu-box {
     position: fixed;
     overflow: hidden;
     width: 100%;
-    transition-duration:0.4s;
-    height: 50px;background: none;
+    transition-duration: 0.4s;
+    height: 100px;
+    background: none;
 }
-.menu{
+.menu {
     width: 1005px;
-    margin:auto;
+    margin: auto;
     height: 50px;
-    background:none;
+    background: none;
 }
-.menu-item h2 a{
-    padding-top:6px;
-    color:#C6CDD4;
+.menu-item h2 a {
+    padding-top: 6px;
+    color: #C6CDD4;
     transition-duration: 0.4s;
-    padding-left:10px;
-    float:left;
+    padding-left: 10px;
+    float: left;
 }
-.menu-item a{
-    padding:13px 15px;
-    color:#C6CDD4;
-    float:right;
+.menu-item a {
+    padding: 13px 15px;
+    color: #C6CDD4;
+    float: right;
     transition-duration: 0.4s;
+    text-decoration: none;
 }
-.menu-item a:hover{
-    color:white;
-    font-size:20px;
+.menu-item a:hover {
+    color: white;
+    font-size: 20px;
 }
-.menu-item h2 a:hover{
-    color:white;
-    font-size:27px;
+.menu-item h2 a:hover {
+    color: white;
+    font-size: 27px;
 }
-#item-box{
+#item-box {
     height: 1150px;
-    background:white;
+    background: white;
     overflow: hidden;
+}
+.banner {
+    background: url(../images/backgrounds/background_0.png);
+	background-size: auto;
+	background-position: center;
+	width: 100%;
+	height: 1000px;
+}
+.join-buttom {
+	padding-top: 450px;
+	padding-left: 100px;
+}
+.join-buttom a {
+	padding: 15px;
+	border: 3px solid white;
+	color: white;
+	margin-right: 15px;
+	float: left;
+	transition: 0.4s;
+    text-decoration: none;
+}
+.join-item {
+	font-size: 30px;
+	color: white;
+	padding-bottom: 50px;
+}
+.join-item h2 {
+	margin-bottom: 40px;
+}
+.join-buttom a:hover {
+	color: black;
+	background: white;
+}
+.text {
+    font-family: Source-Sans;
+    line-height: 48px;
+}
+.text-title {
+    margin-left: 60px;
+    font-size: 36px;
+    font-weight: 800;
+}
+.content {
+    margin-left: 12px;
+    font-size: 24px;
+    text-indent: 48px;
+}
+.footer {
+    text-align: right;
+    margin-top: 36px;
+    margin-right: 15px;
+    color: gray;
 }

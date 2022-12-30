@@ -1,3 +1,11 @@
-这是[柚子柚子](https://space.bilibili.com/1377882998)制作的Star Pixel服务器官网，用于推广服务器，也可在此查看服务器概述。
-# 唠唠叨叨
-说实话，这个网页是我晚上写启动器的时候抽空写的，当时服主让我赶紧做掉，我考虑到开学之后没空，所以就抓紧做了个框架，可能不是很好看，请多多包涵……
+# Star Pixel - 官网
+该储存库包括了 Star Pixel 官网的全部源代码，供参考使用。
+
+## 重定向规则
+| 请求 URI | 状态码 | 重定向 URI |
+| --- | --- | --- |
+| / | 302 | /home |
+| /index.html | 302 | /home/index.html |
+| /client | 302 | /resources/clients/HMCLClient.exe |
+| /logo.png | 302 | /resources/images/logo.png |
+| /README.md | 302 | github.com/StarPixel-Team/Website |
