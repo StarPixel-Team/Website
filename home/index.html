@@ -3,11 +3,10 @@
     <head>
         <meta charset="utf-8"/>
         <title>Star Pixel | 我的世界，也是你的世界。</title>
-        <meta name="keywords" content="Minecraft,MC,我的世界,服务器,咕咕咕,MC服务器,Star,Pixel,Star Pixel,1.18,1.18.2,1.19,1.19.2,纯净,生存,粘液,粘液科技,养老,摸鱼,咕了咕了,小游戏,星像素,PvP"/>
+        <meta name="keywords" content="Minecraft,MC,我的世界,服务器,Star,Pixel,Star Pixel,纯净,生存,粘液,粘液科技,养老,摸鱼,咕了咕了,小游戏,星像素,PvP,咕,咕咕,咕咕咕,咕咕咕咕,MC服务器,1.18,1.18.2,1.19,1.19.2,1.19.3"/>
         <meta name="description" content="欢迎访问 Star Pixel 官网"/>
         <meta name="robots" content="index,nofollow"/>
         <meta name="author" content="Star Pixel"/>
-        <meta name="generator" content="Visual Studio Code"/>
         <meta name="copyright" content="© Star Pixel 2022 All Rights Reserved."/>
         <meta http-equiv="Content-Language" content="zh-CN"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -24,7 +23,9 @@
         <div class="menu-box">
             <div class="menu">
                 <div class="menu-item">
-                    <h2 class="logo"><a href="#" style="font-family: Titillium;">Star Pixel</a></h2>
+                    <h2 class="logo">
+                        <a href="#" style="font-family: Titillium;">Star Pixel</a>
+                    </h2>
                     <div id="menu-item-list">
                         <a href="..\help">帮助</a>
                         <a href="..\posts" target="_blank">像素事务所</a>
@@ -41,27 +42,64 @@
                 <div class="join-item">
                     <p>我的世界，也是你的世界。</p>
                 </div>
+                <!--
                 <h1><a href="https://jq.qq.com/?_wv=1027&k=5xAWFbj">加入我们</a></h1>
                 <h1><a href="http://www.breezecraft.top/online.php?server=play.BreezeCraft.top">获取信息</a></h1>
-                <h1><a href="download.html">客户端下载</a></h1>
+                <h1><a href="download.html">下载客户端</a></h1>
+                -->
             </div>
         </div>
+        <!--滚动时改变选择条样式-->
+        <script type="text/javascript">
+            // 待修复：滚动页面后，鼠标悬浮不可更改选择栏颜色
+            $(window).on("scroll", function() {
+                if ($(window).scrollTop() <= $("#item-box").offset().top) {
+                    $(".menu-box").css({"background":"none"});
+                    $(".menu-box").css({"box-shadow":"none"});
+                    $(".menu-item h2 a").css({"color":"#C6CDD4"});
+                    $(".menu-item a").css({"color":"#C6CDD4"});
+                } else {
+                    $(".menu-box").css({"background":"#FFFFFF"});
+                    $(".menu-box").css({"box-shadow":"0px 0px 6px #EAEAEA"});
+                    $(".menu-item h2 a").css({"color":"#333333"});
+                    $(".menu-item-list a").css({"color":"#333333"});
+                }
+            });
+        </script>
         <!--下方文字-->
-        <div class="text">
-            <p class="text-title">欢迎！</p>
-            <div class="content">
-                <p>服务器有粘液科技、太空星系、天灾系统、更多附魔、血夜等上百种趣味插件，还有超过原版 11 种地形以及地牢遗迹等你探索！</p>
-                <p>因服务器重新建设，目前仅有基础的主城建筑完工，后续我们会陆续完善各世界，以及不同功能的建筑。所以我们同时需要您加入我们，一起建设这个服务器、这个世界，建设一个大家的家。</p>
-                <p>在这里，您不是孤独的一个人：前期有新人接待，助您度过前期生存，直到您有了自己的住所、自己的家。后期您可以帮助完善建筑，也可以招待新人，为服务器添砖加瓦。</p>
-            </div>
-            <p class="text-title">有什么事情不能做？</p>
-            <div class="content">
-                <p>我们致力于创造一个良好的游玩平台。因此，您不能严重扰乱其他玩家的正常游玩。</p>
-                <p>有关详细规则，请参见<a href="..\info">信息</a>页面。</p>
+		<div id="item-box"><!--#item-box用于js-->
+            <div class="text">
+                <p class="text-title">欢迎！</p>
+                <div class="content">
+                    <p>服务器有粘液科技、太空星系、天灾系统、更多附魔、血夜等上百种趣味插件，还有超过原版 11 种地形以及地牢遗迹等你探索！</p>
+                    <p>因服务器重新建设，目前仅有基础的主城建筑完工，后续我们会陆续完善各世界，以及不同功能的建筑。所以我们同时需要您加入我们，一起建设这个服务器、这个世界，建设一个大家的家。</p>
+                    <p>在这里，您不是孤独的一个人：前期有新人接待，助您度过前期生存，直到您有了自己的住所、自己的家。后期您可以帮助完善建筑，也可以招待新人，为服务器添砖加瓦。</p>
+                    <p>你们加上我们，我们将会建设出一个全新的世界，我的世界，同时也是你的世界。</p>
+                </div>
+                <p class="text-title">服务器有什么优点？</p>
+                <div class="content">
+                    <p>1.19 高版本纯净客户端，主玩法粘液科技，有粘液材质包，蓬松科技，环保能源等各种附属；</p>
+                    <p>服务器已有刷怪塔，不缺经验解锁科技树；</p>
+                    <p>不仅不封爆破稿，还增加了增强爆破稿，增强爆破铲等，都是 5*5 范围，减少繁琐的劳动；</p>
+                    <p>老服归来，服务器是按年租的，不用担心跑路；</p>
+                    <p>购买了很多高级付费插件，定制开发了 5 款原创插件，还加入了 PvP 段位天梯赛玩法；</p>
+                    <p>无高频红石限制，不禁物品，有建筑插件方便建筑师，有举高高插件方便运村民，有宠物插件陪伴您度过一个人的时光；</p>
+                    <p>有永久主世界、永久下界、永久末地，还有每周刷新的资源世界，可以提供丰富无限的资源；</p>
+                    <p>服务器每个玩家都很友好，服主也是几位老玩家，深知各种让人很不舒服的细节；</p>
+                    <p>各种指令不好记忆，可以看一个全能动态菜单，不需要背指令；</p>
+                    <p>支持自动补全命令，输错命令时还能够自动猜测并执行；</p>
+                    <p>太多了，懒得列了，溜了。</p>
+                </div>
+                <p class="text-title">有什么事情不能做？</p>
+                <div class="content">
+                    <p>我们致力于创造一个良好的游玩平台。因此，您不能严重扰乱其他玩家的正常游玩。</p>
+                    <p>有关详细规则，请参见<a href="..\info">信息</a>页面。</p>
+                </div>
             </div>
         </div>
+        <!--待修复：不可展示全部内容-->
         <div class="footer">
-            <p>© Star Pixel 2022 | <a href="http://starpixel.cc">starpixel.cc</a> | 作者：Star Pixel 管理团队</p>
+            <p>© Star Pixel 2022 | <a href="http://starpixel.cc">starpixel.cc</a> | <a href="https://github.com/StarPixel-Team/Website">GitHub</a> | 作者：Star Pixel 管理团队</p>
         </div>
     </body>
 </html>
